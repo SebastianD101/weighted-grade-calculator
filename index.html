@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Weighted Grade Calculator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+    <link rel="icon" href="calc-icon.png">
+</head>
+
+<div id="square"></div>
+<script src="script.js"></script>
+
+<body>
+    <div>
+        <form><br><br><br><br><br><br>
+            <center>
+                <input type="number" id="grade_1" name="keyword" placeholder="Grade (%)">
+                <input type="number" id="weight_1" name="keyword" placeholder="Weight (%)">
+                <input type="number" id="grade_2" name="keyword" placeholder="Grade (%)" style="display: none">
+                <input type="number" id="weight_2" name="keyword" placeholder="Weight (%)" style="display: none">
+                <input type="number" id="grade_3" name="keyword" placeholder="Grade (%)" style="display: none">
+                <input type="number" id="weight_3" name="keyword" placeholder="Weight (%)" style="display: none">
+                <input type="number" id="grade_4" name="keyword" placeholder="Grade (%)" style="display: none">
+                <input type="number" id="weight_4" name="keyword" placeholder="Weight (%)" style="display: none">
+                <input type="number" id="grade_5" name="keyword" placeholder="Grade (%)" style="display: none">
+                <input type="number" id="weight_5" name="keyword" placeholder="Weight (%)" style="display: none">
+                <input type="number" id="grade_6" name="keyword" placeholder="Grade (%)" style="display: none">
+                <input type="number" id="weight_6" name="keyword" placeholder="Weight (%)" style="display: none">
+                <input type="number" id="grade_6" name="keyword" placeholder="Grade (%)" style="display: none">
+                <input type="number" id="weight_6" name="keyword" placeholder="Weight (%)" style="display: none">
+                
+                <div class="button_container">
+                    <input type="button" class="input_buttons" id="button" value="+" onclick="add_row()">
+                    <input type="button" class="input_buttons" id="button" value="-" onclick="subtract_row()">
+                    <input type="button" class="calculate" id="calculate" value="Calculate" onclick="calc()">
+                </div>
+                <p id="tag" style="display: none">Overall Grade: <b id="ovr_grade">0</b></p>
+            </center>
+        </form>
+    </div>
+
+</html>
