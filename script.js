@@ -11,8 +11,10 @@ function subtract_row() {
     var counter = 2;
     while (document.getElementById("grade_" + counter).style.display === "inline-block") {
         counter++;
+        if (counter == 7) {
+            break;
+        }
     }
-    
     counter--;
     if (counter !== 1) {
         document.getElementById("grade_" + counter).style.display = "none";
